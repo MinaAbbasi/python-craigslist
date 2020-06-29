@@ -146,6 +146,8 @@ class CraigslistHousing(CraigslistBase):
     custom_result_fields = True
 
     extra_filters = {
+        # postal
+        'postal': {'url_key': 'postal', 'value': None},
         # price
         'min_price': {'url_key': 'min_price', 'value': None},
         'max_price': {'url_key': 'max_price', 'value': None},
